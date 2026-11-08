@@ -56,7 +56,8 @@ Summary: pass 0 · caution 0 · fail 6
 
 ## Want the full workflow?
 The paid **viewringer Shopping Shorts** pack turns an Amazon link into a full plan: hooks, an 8-cut shot list, narration, per-cut AI video prompts, platform copy, and a 6-section check (adds price wording, copyright, and platform labels).
-→ https://viewringer.gumroad.com/l/shorts-planner
+→ Demo video and details: https://viewringer.kr/en/skills/
+→ Buy on Gumroad: https://viewringer.gumroad.com/l/shorts-planner
 
 ## License
 MIT — see [LICENSE](LICENSE).
