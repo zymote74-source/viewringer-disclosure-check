@@ -1,6 +1,6 @@
-# viewringer Disclosure Check — a free Claude Code skill
+# viewringer Disclosure Check — a free agent skill for Claude Code and Codex
 
-A [Claude Code](https://code.claude.com/docs/en/overview) skill that checks affiliate shorts scripts, titles, and descriptions before you post. Paste your text and it returns a pass / caution / fail table with rewrites you can paste as-is.
+A free agent skill (standard `SKILL.md` format) for [Claude Code](https://code.claude.com/docs/en/overview) and OpenAI Codex CLI that checks affiliate shorts scripts, titles, and descriptions before you post. Paste your text and it returns a pass / caution / fail table with rewrites you can paste as-is.
 
 It checks three things:
 1. **Affiliate disclosure** (FTC Endorsement Guides, Amazon Associates): is it the right wording, in the first line of the description, and on screen at the start and end?
@@ -10,8 +10,9 @@ It checks three things:
 Results are for reference only and are not legal advice.
 
 ## Install
-Copy the `disclosure-check` folder into your skills folder:
+Copy the `disclosure-check` folder into your agent's skills folder.
 
+### Claude Code
 ```
 cp -r disclosure-check ~/.claude/skills/
 ```
@@ -20,11 +21,22 @@ cp -r disclosure-check ~/.claude/skills/
 - On Windows, the folder is `%USERPROFILE%\.claude\skills\`.
 - Restart Claude Code after copying.
 - If you also use the paid viewringer pack in the same project, both skills can answer "check this script". Install this one only where you don't use the paid pack.
+- Requires a Claude plan that includes Claude Code (Pro or higher).
 
-Requires a Claude plan that includes Claude Code (Pro or higher). No API keys or other tools.
+### OpenAI Codex CLI
+```
+cp -r disclosure-check ~/.codex/skills/
+```
+
+- On Windows, the folder is `%USERPROFILE%\.codex\skills\`. For one project only, use `.codex/skills/` inside that project folder.
+- The skill folder must sit directly inside `skills/` (one level deep).
+- Run `codex --list-skills` to confirm it loaded.
+- Tested mainly on Claude Code. If something behaves differently in Codex, please open an issue.
+
+No API keys or other tools needed.
 
 ## Use
-In Claude Code, type `check this script` and paste your script, title, or description.
+In Claude Code or Codex, type `check this script` and paste your script, title, or description.
 
 Try it with: `Best germ-free rack, cures back pain, today only!`
 
